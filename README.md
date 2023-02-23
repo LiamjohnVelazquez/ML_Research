@@ -14,3 +14,6 @@ Type your cpu name into search bar
 
 
 ## Federated Learning in python with PySyft within Intel SGX
+[PYSYFT, PYTORCH AND INTEL SGX: SECURE AGGREGATION ON TRUSTED EXECUTION ENVIRONMENTS](https://blog.openmined.org/pysyft-pytorch-intel-sgx/)
+
+[Getting Started](https://openmined.github.io/PySyft/)
