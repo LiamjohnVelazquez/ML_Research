@@ -11,7 +11,7 @@ Type your cpu name into search bar
 [With accompanying github](https://github.com/intel/linux-sgx)
 
 ## Deep Learning in C/C++ with Darknet within Intel SGX...
-
+[Deep Learning with Intel SGX by github user landoxy](https://github.com/landoxy/intel-sgx-deep-learning)
 
 ## Federated Learning in python with PySyft within Intel SGX
 [PYSYFT, PYTORCH AND INTEL SGX: SECURE AGGREGATION ON TRUSTED EXECUTION ENVIRONMENTS](https://blog.openmined.org/pysyft-pytorch-intel-sgx/)
