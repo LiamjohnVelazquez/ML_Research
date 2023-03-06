@@ -17,3 +17,8 @@ Type your cpu name into search bar
 [PYSYFT, PYTORCH AND INTEL SGX: SECURE AGGREGATION ON TRUSTED EXECUTION ENVIRONMENTS](https://blog.openmined.org/pysyft-pytorch-intel-sgx/)
 
 [Getting Started](https://openmined.github.io/PySyft/)
+
+
+## Learn to use Intel SGX
+[The Magic of Intel’s SGX: A Tutorial on Programming a Secure Enclave](https://medium.com/magicofc/the-magic-of-intels-sgx-how-to-hello-it-sec-world-fb0295d6c33b)
+[Intel SGX developer guide](https://download.01.org/intel-sgx/sgx-linux/2.8/docs/Intel_SGX_Developer_Guide.pdf)
