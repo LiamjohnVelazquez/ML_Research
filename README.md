@@ -23,3 +23,5 @@ Type your cpu name into search bar
 [The Magic of Intel’s SGX: A Tutorial on Programming a Secure Enclave](https://medium.com/magicofc/the-magic-of-intels-sgx-how-to-hello-it-sec-world-fb0295d6c33b)
 
 [Intel SGX developer guide](https://download.01.org/intel-sgx/sgx-linux/2.8/docs/Intel_SGX_Developer_Guide.pdf)
+
+[Intel(R) Software Guard Extensions SDK Developer Reference for Linux* OS](https://01.org/sites/default/files/documentation/intel_sgx_sdk_developer_reference_for_linux_os_pdf.pdf)
