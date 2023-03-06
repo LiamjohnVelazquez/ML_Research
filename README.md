@@ -25,3 +25,5 @@ Type your cpu name into search bar
 [Intel SGX developer guide](https://download.01.org/intel-sgx/sgx-linux/2.8/docs/Intel_SGX_Developer_Guide.pdf)
 
 [Intel(R) Software Guard Extensions SDK Developer Reference for Linux* OS](https://01.org/sites/default/files/documentation/intel_sgx_sdk_developer_reference_for_linux_os_pdf.pdf)
+
+[The project demonstrates Intel(R) Deep Neural Network Library (DNNL) functions inside Intel(R) SGX environment](https://github.com/intel/linux-sgx/tree/master/SampleCode/SampleDNNL)
