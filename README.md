@@ -10,12 +10,15 @@ Type your cpu name into search bar
 
 [With accompanying github](https://github.com/intel/linux-sgx)
 
-- [] Eclipse* Mars 1 with CDT IDE for C/C++ Developpers (version 4.5.1). To
+- [x] Eclipse* Mars 1 with CDT IDE for C/C++ Developpers (version 4.5.1). To
 use this version, install Java* Development Kit (JDK) or Java* Runtime
 Environment (JRE) version 1.8 or above.
-- [] gcc*/g++ tools
-- [] OpenSSL*
-- [] Intel(R) SGX SDK for Linux* OS
+
+[Install eclipse with c/c++ for Ubuntu](https://www.linuxfordevices.com/tutorials/ubuntu/eclipse-ide-with-cpp#:~:text=Creating%20a%20C%2B%2B%20Program%20in,and%20click%20again%20on%20Next.)
+
+- [x] gcc*/g++ tools
+- [ ] OpenSSL*
+- [x] Intel(R) SGX SDK for Linux* OS
 
 ## Deep Learning in C/C++ with Darknet within Intel SGX...
 [Deep Learning with Intel SGX by github user landoxy](https://github.com/landoxy/intel-sgx-deep-learning)
