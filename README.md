@@ -2,13 +2,15 @@
 
 ## GOAL: Intel SGX to accomplish some algorithm including deep learning inference and back probagation
 
-### Installation for linux 20.08
+### Installation for linux 20.04
 Type your cpu name into search bar
 [Check for valid intel cpu](https://ark.intel.com/content/www/us/en/ark/products/186604/intel-core-i79700k-processor-12m-cache-up-to-4-90-ghz.html)
 
 [Installation of Intel sgx sdk on linux 20.08 walkthrough](https://www.youtube.com/watch?v=X0YzzT4uAY4)
 
 [With accompanying github](https://github.com/intel/linux-sgx)
+
+###
 
 - [x] Eclipse* Mars 1 with CDT IDE for C/C++ Developpers (version 4.5.1). To
 use this version, install Java* Development Kit (JDK) or Java* Runtime
@@ -17,7 +19,7 @@ Environment (JRE) version 1.8 or above.
 [Install eclipse with c/c++ for Ubuntu](https://www.linuxfordevices.com/tutorials/ubuntu/eclipse-ide-with-cpp#:~:text=Creating%20a%20C%2B%2B%20Program%20in,and%20click%20again%20on%20Next.)
 
 - [x] gcc*/g++ tools
-- [ ] OpenSSL*
+- [x] OpenSSL*
 - [x] Intel(R) SGX SDK for Linux* OS
 
 ## Deep Learning in C/C++ with Darknet within Intel SGX...
