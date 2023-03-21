@@ -8,6 +8,14 @@ Type your cpu name into search bar
 
 [Installation of Intel sgx sdk on linux 20.04 walkthrough](https://www.youtube.com/watch?v=X0YzzT4uAY4)
 
+- Steps to run sample code
+  - cd into desired sample code e.g. (linux-sgx/SampleCode/RemoteAttestation/) 
+  - create makefile " make SGX_MODE=[desired mode]"
+    - e.g. SGX_MODE=SIM
+  - cd into bin
+  - ls to view "app"
+  - "./app" to run code
+
 [With accompanying github](https://github.com/intel/linux-sgx)
 
 ###
