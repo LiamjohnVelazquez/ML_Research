@@ -46,4 +46,12 @@ Environment (JRE) version 1.8 or above.
 
 [Intel(R) Software Guard Extensions SDK Developer Reference for Linux* OS](https://01.org/sites/default/files/documentation/intel_sgx_sdk_developer_reference_for_linux_os_pdf.pdf)
 
+
+## Intel Deep Neural Network
 [The project demonstrates Intel(R) Deep Neural Network Library (DNNL) functions inside Intel(R) SGX environment](https://github.com/intel/linux-sgx/tree/master/SampleCode/SampleDNNL)
+performed make next step is 
+4. Install Intel(R) SGX DNNL library and header files.
+   a. Copy Intel(R) SGX DNNL lib to the Intel(R) SGX SDK installation directory.
+      $ cp "./sgx_dnnl/lib/libsgx_dnnl.a" "$(SGX_SDK)/lib64"
+   b. Copy Intel(R) SGX DNNL header files to the Intel(R) SGX SDK header file directory.
+      $ cp "./sgx_dnnl/include/*" "$(SGX_SDK)/include"
