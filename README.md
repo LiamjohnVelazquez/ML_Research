@@ -47,6 +47,8 @@ Environment (JRE) version 1.8 or above.
 
 [Intel(R) Software Guard Extensions SDK Developer Reference for Linux* OS](https://01.org/sites/default/files/documentation/intel_sgx_sdk_developer_reference_for_linux_os_pdf.pdf)
 
+[Sample code "Cxx17SGXDemo" Explained](https://github.com/intel/linux-sgx/tree/master/SampleCode/Cxx17SGXDemo)
+- Code begins in app.cpp within the APP folder
 
 ## Intel Deep Neural Network
 [The project demonstrates Intel(R) Deep Neural Network Library (DNNL) functions inside Intel(R) SGX environment](https://github.com/intel/linux-sgx/tree/master/SampleCode/SampleDNNL)
