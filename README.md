@@ -15,6 +15,7 @@ Type your cpu name into search bar
   - cd into bin
   - ls to view "app"
   - "./app" to run code
+  - In case sdk isnt working after restarting pc try setting up environment variables again by cd into "/linux-sgx/linux/installer/bin/" and using command "$ source /home/iar/linux-sgx/linux/installer/bin/sgxsdk/environment"
 
 [With accompanying github](https://github.com/intel/linux-sgx)
 
