@@ -61,7 +61,9 @@ performed make next step is
 
 ## Building blocks of basic Intel SGX Project using SampleCode/Cxx17SGXDemo as reference
 
-### Enclave Configuration File
+### Enclave Configuration File pg 58 of intel_sgx_sdk_developer_reference_for_linux_os
+
+
 
 
 
