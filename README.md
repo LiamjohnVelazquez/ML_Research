@@ -19,6 +19,8 @@ Type your cpu name into search bar
 
 [With accompanying github](https://github.com/intel/linux-sgx)
 
+[Most up to date installation guide](https://download.01.org/intel-sgx/latest/linux-latest/docs/Intel_SGX_SW_Installation_Guide_for_Linux.pdf)
+
 ###
 
 - [x] Eclipse* Mars 1 with CDT IDE for C/C++ Developpers (version 4.5.1). To
@@ -45,7 +47,7 @@ Environment (JRE) version 1.8 or above.
 
 [Intel SGX developer guide](https://download.01.org/intel-sgx/sgx-linux/2.8/docs/Intel_SGX_Developer_Guide.pdf)
 
-[Intel(R) Software Guard Extensions SDK Developer Reference for Linux* OS](https://01.org/sites/default/files/documentation/intel_sgx_sdk_developer_reference_for_linux_os_pdf.pdf)
+[Intel(R) Software Guard Extensions SDK Developer Reference for Linux* OS](https://download.01.org/intel-sgx/latest/linux-latest/docs/Intel_SGX_Developer_Reference_Linux_2.19_Open_Source.pdf)
 
 [Sample code "Cxx17SGXDemo" Explained](https://github.com/intel/linux-sgx/tree/master/SampleCode/Cxx17SGXDemo)
 - Code begins in app.cpp within the APP folder
