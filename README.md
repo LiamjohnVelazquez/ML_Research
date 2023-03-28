@@ -19,7 +19,7 @@ Type your cpu name into search bar
 - This video does not cover psw installation, refer to github for that, useful for visual represenation
 
 
-- Steps to run sample code
+- Steps to run sample code in simulation mode
   - cd into desired sample code e.g. (/linux-sgx/linux/installer/bin/sgxsdk/SampleCode/[desired sample code]) 
   - create makefile " make SGX_MODE=[desired mode]"
     - e.g. SGX_MODE=SIM
