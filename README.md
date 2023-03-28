@@ -6,7 +6,18 @@
 Type your cpu name into search bar
 [Check for valid intel cpu](https://ark.intel.com/content/www/us/en/ark/products/186604/intel-core-i79700k-processor-12m-cache-up-to-4-90-ghz.html)
 
+
+
+[Most up to date installation guide (2/28/2023 version)](https://download.01.org/intel-sgx/latest/linux-latest/docs/Intel_SGX_SW_Installation_Guide_for_Linux.pdf)
+- In Depth Installation guide, useful for information about required drivers, the github below is easier to follow for PSW and SDK installation
+
+
+[Linux sgx github with ReadMe for installing Intel SGX PSW and Intel SGX PSW](https://github.com/intel/linux-sgx)
+
+
 [Installation of Intel sgx sdk on linux 20.04 walkthrough](https://www.youtube.com/watch?v=X0YzzT4uAY4)
+- This video does not cover psw installation, refer to github for that, useful for visual represenation
+
 
 - Steps to run sample code
   - cd into desired sample code e.g. (/linux-sgx/linux/installer/bin/sgxsdk/SampleCode/[desired sample code]) 
@@ -15,13 +26,11 @@ Type your cpu name into search bar
   - cd into bin
   - ls to view "app"
   - "./app" to run code
-  - In case sdk isnt working after restarting pc try setting up environment variables again by cd into "/linux-sgx/linux/installer/bin/" and using command "$ source /home/iar/linux-sgx/linux/installer/bin/sgxsdk/environment"
+  - In case sdk isnt working after restarting pc try setting up environment variables again by cd into "/linux-sgx/linux/installer/bin/" and using command "$ source /home/iar/linux-sgx/linux/installer/bin/sgxsdk/environment" replace this line with your specific path
   
 source /home/iar/linux-sgx/linux/installer/bin/sgxsdk/environment
 
-[With accompanying github](https://github.com/intel/linux-sgx)
 
-[Most up to date installation guide](https://download.01.org/intel-sgx/latest/linux-latest/docs/Intel_SGX_SW_Installation_Guide_for_Linux.pdf)
 
 ###
 
