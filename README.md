@@ -10,7 +10,7 @@ Type your cpu name into search bar
 
 [Most up to date installation guide (2/28/2023 version)](https://download.01.org/intel-sgx/latest/linux-latest/docs/Intel_SGX_SW_Installation_Guide_for_Linux.pdf)
 - In depth installation guide, useful for information about required drivers, the github below is easier to follow for PSW and SDK installation
-- In case of bios with "software-enabled option 
+- In case of bios with "software-enabled" option in bios and driver not found in dev folder use https://github.com/intel/sgx-software-enable
 
 
 [Linux sgx github with ReadMe for installing Intel SGX PSW and Intel SGX PSW](https://github.com/intel/linux-sgx)
