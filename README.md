@@ -32,6 +32,7 @@ Type your cpu name into search bar
 source /home/iar/linux-sgx/linux/installer/bin/sgxsdk/environment
 
 -To run in hardware mode make sure intel sgx drivers are installed 
+  - Use "make", or refer to developer guide for more specific instructions
 
 ###
 
