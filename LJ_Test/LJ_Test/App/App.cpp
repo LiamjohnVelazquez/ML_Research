@@ -32,7 +32,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
-
+#include <vector>
 # include <unistd.h>
 # include <pwd.h>
 # define MAX_PATH FILENAME_MAX
@@ -40,7 +40,8 @@
 #include "sgx_urts.h"
 #include "App.h"
 #include "Enclave_u.h"
-
+#include <iostream>
+using namespace std;
 /* Global EID shared by multiple threads */
 sgx_enclave_id_t global_eid = 0;
 
@@ -202,12 +203,52 @@ int SGX_CDECL main(int argc, char *argv[])
  
     
     /* Utilize trusted libraries */ 
-    ecall_libcxx_functions();
-    
+    //ecall_libcxx_functions();
+
+
+    int a = 34, b = 23, point = 0;
+    size_t size = 5;
+    int my_array[5] = {1,2,3,4,5};
+
+    printf("Testing my own functions...\n");
+
+    sgx_status_t status_add = in_enclave_add(global_eid, &point, a, b);
+    if (SGX_SUCCESS != status_add) {
+        printf("Error add");
+    }
+
+
+
+
+
+
+
+
+
+
+
+    printf("%d + %d = %d\n",a,b, point);
+    std::cout << "My array before: " << std::endl;
+
+    for(int i=0 ;i < size;i++)
+    {
+        std::cout << my_array[i] << std::endl;
+    }
+    sgx_status_t status_arr = in_enclave_arr(global_eid, my_array, size);
+    if (SGX_SUCCESS != status_arr) {
+        printf("Error array");
+    }
+    std::cout << "My array after: " << std::endl;
+    for(int i=0 ;i < size;i++)
+    {
+        std::cout << my_array[i] << std::endl;
+    }
+
+
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
     
-    printf("Info: Cxx17DemoEnclave successfully returned.\n");
+    printf("Info: LJ_Test working :).\n");
 
     //printf("Enter a character before exit ...\n");
     //getchar();

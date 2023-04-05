@@ -48,6 +48,10 @@ enclave {
      *  [in]: copy the string buffer to App outside.
      *  [string]: specifies 'str' is a NULL terminated buffer.
      */
+     trusted{
+          public int in_enclave_add(int a, int b);
+          public void in_enclave_arr([in, out]int arr[5], size_t size);
+          };
     untrusted {
         void ocall_print_string([in, string] const char *str);
     };

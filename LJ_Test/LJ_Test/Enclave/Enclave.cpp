@@ -49,3 +49,12 @@ int printf(const char *fmt, ...)
     ocall_print_string(buf);
     return 0;
 }
+int in_enclave_add(int a, int b){
+    return a + b;
+}
+void in_enclave_arr(int my_array[5], size_t size){
+
+    for(int i = 0; i < size; i++) {
+        my_array[i] += 1;
+    }
+}
