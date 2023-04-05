@@ -75,8 +75,9 @@ performed make next step is
       $ cp "./sgx_dnnl/include/*" "$(SGX_SDK)/include"
 
 ## Building blocks of basic Intel SGX Project using SampleCode/Cxx17SGXDemo as reference
+- SampleCode/Cxx17SGXDemo is a great template for learning to work with intel sgx but SampleCode/SampleEnclave is great as well
+- SampleEnclave has examples for App.cpp, Enclave.cpp, and Enclave.edl files within its Edger8rSyntax files that help understand how to call files from untrusted app.cpp, how to protoype functions within the .edl files, and how to define functions within the Enclave.cpp
 
-### Enclave Configuration File pg 58 of intel_sgx_sdk_developer_reference_for_linux_os
 
 
 
