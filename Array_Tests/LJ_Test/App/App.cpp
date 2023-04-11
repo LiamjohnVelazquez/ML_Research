@@ -208,7 +208,12 @@ int SGX_CDECL main(int argc, char *argv[])
 
     int a = 34, b = 23, point = 0;
     size_t size = 5;
-    int my_array[5] = {1,2,3,4,5};
+    float my_array_1[5] = {1.1,2.2,3.3,4.4,5.5};
+    float my_array_2[5] = {1.1,2.2,3.3,4.4,5.5};
+    float my_array_add_result[5];
+    float my_array_mul_result[5];
+    float my_array_div_result[5];
+    //int my_array_1_return[5];
 
     printf("Testing my own functions...\n");
 
@@ -217,32 +222,61 @@ int SGX_CDECL main(int argc, char *argv[])
         printf("Error add");
     }
 
-
-
-
-
-
-
-
-
-
-
     printf("%d + %d = %d\n",a,b, point);
-    std::cout << "My array before: " << std::endl;
 
+
+
+
+
+    std::cout << "My arrays before (arrays consist of floats): " << std::endl;
+    std::cout << "my_array_1";
     for(int i=0 ;i < size;i++)
     {
-        std::cout << my_array[i] << std::endl;
+        std::cout << " " << my_array_1[i];
+
     }
-    sgx_status_t status_arr = in_enclave_arr(global_eid, my_array, size);
-    if (SGX_SUCCESS != status_arr) {
-        printf("Error array");
-    }
-    std::cout << "My array after: " << std::endl;
+    std::cout << endl;
+    std::cout << "my_array_2";
     for(int i=0 ;i < size;i++)
     {
-        std::cout << my_array[i] << std::endl;
+        std::cout << " " <<my_array_2[i] ;
+
     }
+    std::cout << endl;
+
+    sgx_status_t status_arr_add = in_enclave_arr(global_eid, my_array_1, my_array_2, my_array_add_result, size);
+
+    if (SGX_SUCCESS != status_arr_add) printf("Error array add");
+
+
+    std::cout << "My array after add: " << std::endl;
+    for(int i=0 ;i < size;i++) {
+        std::cout << my_array_add_result[i] << " ";
+    }
+    std::cout << endl;
+
+
+    sgx_status_t status_arr_mul = in_enclave_arr_mul(global_eid, my_array_1, my_array_2, my_array_mul_result, size);
+
+    if (SGX_SUCCESS != status_arr_mul) printf("Error array mul");
+
+    std::cout << "My array after mul: " << std::endl;
+    for(int i=0 ;i < size;i++) {
+        std::cout << my_array_mul_result[i] << " ";
+    }
+    std::cout << endl;
+
+
+    sgx_status_t status_arr_div = in_enclave_arr_div(global_eid, my_array_1, my_array_2, my_array_div_result, size);
+
+    if (SGX_SUCCESS != status_arr_div) printf("Error array div");
+
+    std::cout << "My array after div: " << std::endl;
+    for(int i=0 ;i < size;i++) {
+        std::cout << my_array_div_result[i] << " ";
+    }
+    std::cout << endl;
+
 
 
     /* Destroy the enclave */
