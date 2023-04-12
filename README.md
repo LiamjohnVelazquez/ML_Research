@@ -53,6 +53,10 @@ Environment (JRE) version 1.8 or above.
 [PYSYFT, PYTORCH AND INTEL SGX: SECURE AGGREGATION ON TRUSTED EXECUTION ENVIRONMENTS](https://blog.openmined.org/pysyft-pytorch-intel-sgx/)
 [OpenMined Intel SGX git hub](https://github.com/OpenMined/sgx-experiments)
 [Getting Started](https://openmined.github.io/PySyft/)
+[Gramine](https://github.com/gramineproject/gramine)
+- Gramine (formerly called Graphene) is a lightweight library OS, designed to run a single application with minimal host requirements. Gramine can run applications in an isolated environment with benefits comparable to running a complete OS in a virtual machine -- including guest customization, ease of porting to different OSes, and process migration.
+
+Gramine supports native, unmodified Linux binaries on any platform. Currently, Gramine runs on Linux and Intel SGX enclaves on Linux platforms.
 
 
 ## Learn to use Intel SGX
