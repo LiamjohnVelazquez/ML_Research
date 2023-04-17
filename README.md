@@ -82,8 +82,9 @@ performed make next step is
       $ cp "./sgx_dnnl/lib/libsgx_dnnl.a" "$(SGX_SDK)/lib64"
    b. Copy Intel(R) SGX DNNL header files to the Intel(R) SGX SDK header file directory.
       $ cp "./sgx_dnnl/include/*" "$(SGX_SDK)/include"
-Next step inludes understanding Alexnet which is the CNN architecture that is used in intel's SampleDNNL example in the intel sgx sample code.
 
+- Next step inludes understanding Alexnet which is the CNN architecture that is used in intel's SampleDNNL example in the intel sgx sample code.
+[
 
 
 
