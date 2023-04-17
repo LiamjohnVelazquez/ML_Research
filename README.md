@@ -84,7 +84,7 @@ performed make next step is
       $ cp "./sgx_dnnl/include/*" "$(SGX_SDK)/include"
 
 - Next step inludes understanding Alexnet which is the CNN architecture that is used in intel's SampleDNNL example in the intel sgx sample code.
-[
+[Alexnet implementation solely in C](https://github.com/Dynmi/AlexNet) 
 
 
 
