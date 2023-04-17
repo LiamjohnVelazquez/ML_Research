@@ -69,6 +69,11 @@ Gramine supports native, unmodified Linux binaries on any platform. Currently, G
 [Sample code "Cxx17SGXDemo" Explained](https://github.com/intel/linux-sgx/tree/master/SampleCode/Cxx17SGXDemo)
 - Code begins in app.cpp within the APP folder
 
+
+## Building blocks of basic Intel SGX Project using SampleCode/Cxx17SGXDemo as reference
+- SampleCode/Cxx17SGXDemo is a great template for learning to work with intel sgx but SampleCode/SampleEnclave is great as well
+- SampleEnclave has examples for App.cpp, Enclave.cpp, and Enclave.edl files within its Edger8rSyntax files that help understand how to call files from untrusted app.cpp, how to protoype functions within the .edl files, and how to define functions within the Enclave.cpp
+
 ## Intel Deep Neural Network
 [The project demonstrates Intel(R) Deep Neural Network Library (DNNL) functions inside Intel(R) SGX environment](https://github.com/intel/linux-sgx/tree/master/SampleCode/SampleDNNL)
 performed make next step is 
@@ -77,12 +82,7 @@ performed make next step is
       $ cp "./sgx_dnnl/lib/libsgx_dnnl.a" "$(SGX_SDK)/lib64"
    b. Copy Intel(R) SGX DNNL header files to the Intel(R) SGX SDK header file directory.
       $ cp "./sgx_dnnl/include/*" "$(SGX_SDK)/include"
-
-## Building blocks of basic Intel SGX Project using SampleCode/Cxx17SGXDemo as reference
-- SampleCode/Cxx17SGXDemo is a great template for learning to work with intel sgx but SampleCode/SampleEnclave is great as well
-- SampleEnclave has examples for App.cpp, Enclave.cpp, and Enclave.edl files within its Edger8rSyntax files that help understand how to call files from untrusted app.cpp, how to protoype functions within the .edl files, and how to define functions within the Enclave.cpp
-
-
+Next step inludes understanding Alexnet which is the CNN architecture that is used in intel's SampleDNNL example in the intel sgx sample code.
 
 
 
