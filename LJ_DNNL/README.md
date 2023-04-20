@@ -21,10 +21,22 @@
 
 
 ### Enclave.edl
+#### .edl files used for protyping functions so they can be accessed by out other files
 
 ### Enclave.lds
+##### The "Enclave.lds" file is a linker script for the enclave. Linker scripts are used to control the memory layout and symbol exports of the final compiled binary. In this case, the linker script is used to specify which symbols should be exported as global or local when building the enclave shared library (libenclave.so).
+- global:: This section lists the global symbols that should be exported by the enclave shared library. These symbols are visible outside the enclave and can be used by the untrusted application or other enclaves.
+
+- g_global_data_sim: A global variable for simulation mode.
+- g_global_data: A global variable for the actual SGX enclave.
+- enclave_entry: The entry point of the enclave. This is the function called when the enclave is first initialized.
+- g_peak_heap_used: A global variable for tracking peak heap memory usage.
+- g_peak_rsrv_mem_committed: A global variable for tracking peak reserved memory committed.
+- local:: This section lists the local symbols that should not be exported by the enclave shared library. In this case, the wildcard * is used, which means all symbols not listed in the global section will be treated as local and not visible outside the enclave.
 
 ### cnn_inference_f32_c.c
+#### implementation of a simple convolutional neural network (CNN) for inference using the DNNL (Deep Neural Network Library) in C language.
+- 
 
 ### cnn_ inference_f32_cpp.cpp
 
