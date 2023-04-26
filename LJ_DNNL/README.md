@@ -36,7 +36,7 @@
 
 ### cnn_inference_f32_c.c
 #### implementation of a simple convolutional neural network (CNN) for inference using the DNNL (Deep Neural Network Library) in C language.
-- 
+- The CNN architecture used in this implementation is inspired by AlexNet, which includes Convolution, ReLU, LRN (Local Response Normalization), and Pooling layers. Here is a summary of the code:
 
 ### cnn_ inference_f32_cpp.cpp
 
