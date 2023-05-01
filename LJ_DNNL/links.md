@@ -4,3 +4,5 @@
 [Simple neural network implementation in C++](https://towardsdatascience.com/simple-neural-network-implementation-in-c-663f51447547)
 
 [Building Neural Network Framework in C using Backpropagation](https://medium.com/analytics-vidhya/building-neural-network-framework-in-c-using-backpropagation-8ad589a0752d)
+
+HI
