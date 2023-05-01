@@ -5,4 +5,6 @@
 
 [Building Neural Network Framework in C using Backpropagation](https://medium.com/analytics-vidhya/building-neural-network-framework-in-c-using-backpropagation-8ad589a0752d)
 
+[](https://www.kaggle.com/code/cdeotte/mnist-cnn-coded-in-c-0-995
+
 HI
