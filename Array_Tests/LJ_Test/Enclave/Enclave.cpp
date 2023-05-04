@@ -52,19 +52,17 @@ int printf(const char *fmt, ...)
 int in_enclave_add(int a, int b){
     return a + b;
 }
-void in_enclave_arr(float my_array_1[5],float my_array_2[5],float my_array_add_result[5], size_t size){
+void in_enclave_arr(double my_array_1[5],double my_array_2[5],double my_array_add_result[5], size_t size){
     for(int i = 0; i < size; i++) {
         my_array_add_result[i] = my_array_1[i] + my_array_2[i];
     }
 }
-
-
-void in_enclave_arr_mul(float my_array_1[5],float my_array_2[5],float my_array_mul_result[5], size_t size){
+void in_enclave_arr_mul(double my_array_1[5],double my_array_2[5],double my_array_mul_result[5], size_t size){
     for(int i = 0; i < size; i++) {
         my_array_mul_result[i] = my_array_1[i] * my_array_2[i];
     }
 }
-void in_enclave_arr_div(float my_array_1[5],float my_array_2[5],float my_array_div_result[5], size_t size){
+void in_enclave_arr_div(double my_array_1[5],double my_array_2[5],double my_array_div_result[5], size_t size){
     for(int i = 0; i < size; i++) {
         my_array_div_result[i] = my_array_1[i] / my_array_2[i];
     }
