@@ -50,9 +50,9 @@ enclave {
      */
      trusted{
           public int in_enclave_add(int a, int b);
-          public void in_enclave_arr([in]float arr1[5], [in]float arr2[5], [in, out]float arr_result[5], size_t size);
-          public void in_enclave_arr_mul([in]float arr1[5], [in]float arr2[5], [in, out]float arr_result_mul[5], size_t size);
-          public void in_enclave_arr_div([in]float arr1[5], [in]float arr2[5], [in, out]float arr_result_div[5], size_t size);
+          public void in_enclave_arr([in]double arr1[5], [in]double arr2[5], [in, out]double arr_result[5], size_t size);
+          public void in_enclave_arr_mul([in]double arr1[5], [in]double arr2[5], [in, out]double arr_result_mul[5], size_t size);
+          public void in_enclave_arr_div([in]double arr1[5], [in]double arr2[5], [in, out]double arr_result_div[5], size_t size);
           };
     untrusted {
         void ocall_print_string([in, string] const char *str);
