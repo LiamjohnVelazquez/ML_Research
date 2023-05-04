@@ -13,3 +13,7 @@
 [mnist-cnn-coded-in-c](https://www.kaggle.com/code/cdeotte/mnist-cnn-coded-in-c-0-995)
 
 HI
+
+https://github.com/gramineproject/gramine/tree/master/CI-Examples/python
+https://github.com/gramineproject/examples/tree/master/pytorch
+https://gramine.readthedocs.io/en/stable/tutorials/pytorch/index.html
