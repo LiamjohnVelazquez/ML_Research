@@ -37,6 +37,7 @@
 # include <pwd.h>
 # define MAX_PATH FILENAME_MAX
 
+#include <iomanip>
 #include "sgx_urts.h"
 #include "App.h"
 #include "Enclave_u.h"
@@ -208,11 +209,11 @@ int SGX_CDECL main(int argc, char *argv[])
 
     int a = 34, b = 23, point = 0;
     size_t size = 5;
-    float my_array_1[5] = {1.1,2.2,3.3,4.4,5.5};
-    float my_array_2[5] = {1.1,2.2,3.3,4.4,5.5};
-    float my_array_add_result[5];
-    float my_array_mul_result[5];
-    float my_array_div_result[5];
+    double my_array_1[5] = {1.111111111111111,2.222222222222222,3.333333333333333,4.444444444444444,5.555555555555555};
+    double my_array_2[5] = {1.111111111111111,2.222222222222222,3.333333333333333,4.444444444444444,5.555555555555555};
+    double my_array_add_result[5];
+    double my_array_mul_result[5];
+    double my_array_div_result[5];
     //int my_array_1_return[5];
 
     printf("Testing my own functions...\n");
@@ -232,14 +233,14 @@ int SGX_CDECL main(int argc, char *argv[])
     std::cout << "my_array_1";
     for(int i=0 ;i < size;i++)
     {
-        std::cout << " " << my_array_1[i];
+        std::cout << setprecision(16) << " " << my_array_1[i];
 
     }
     std::cout << endl;
     std::cout << "my_array_2";
     for(int i=0 ;i < size;i++)
     {
-        std::cout << " " <<my_array_2[i] ;
+        std::cout << setprecision(16) << " " <<my_array_2[i] ;
 
     }
     std::cout << endl;
@@ -251,7 +252,7 @@ int SGX_CDECL main(int argc, char *argv[])
 
     std::cout << "My array after add: " << std::endl;
     for(int i=0 ;i < size;i++) {
-        std::cout << my_array_add_result[i] << " ";
+        std::cout << setprecision(16) << my_array_add_result[i] << " ";
     }
     std::cout << endl;
 
@@ -262,7 +263,7 @@ int SGX_CDECL main(int argc, char *argv[])
 
     std::cout << "My array after mul: " << std::endl;
     for(int i=0 ;i < size;i++) {
-        std::cout << my_array_mul_result[i] << " ";
+        std::cout << setprecision(16) << my_array_mul_result[i] << " ";
     }
     std::cout << endl;
 
@@ -273,7 +274,7 @@ int SGX_CDECL main(int argc, char *argv[])
 
     std::cout << "My array after div: " << std::endl;
     for(int i=0 ;i < size;i++) {
-        std::cout << my_array_div_result[i] << " ";
+        std::cout << setprecision(16) << my_array_div_result[i] << " ";
     }
     std::cout << endl;
 
